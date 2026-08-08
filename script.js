@@ -1,9 +1,9 @@
-const prices = document.querySelectorA11(".prices");
+const prices = document.querySelectorAll(".prices");
 
 let total = 0;
 
 prices.forEach(function(price) {
-	total += parseFloat(price.texeContent);
+	total += parseFloat(price.textContent);
 });
 
 const table = document.querySelector("table");
@@ -16,4 +16,4 @@ cell.textContent = total;
 
 row.appendChild(cell);
 
-table.appenChild(row);
+table.appendChild(row);
